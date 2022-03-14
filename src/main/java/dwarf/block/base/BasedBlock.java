@@ -19,11 +19,6 @@ import java.util.List;
 import java.util.Collections;
 
 public class BasedBlock extends BaseBlock {
-    /**
-     * Creates a new Block with the passed properties
-     *
-     * @param settings The properties of the Block.
-     */
     public BasedBlock(Settings settings) {
         super(settings);
     }
@@ -31,6 +26,7 @@ public class BasedBlock extends BaseBlock {
     public BasedBlock(float hardness,float resistance,int miningLevel){
         super(FabricBlockSettings.of(Material.METAL).requiresTool().breakByTool(FabricToolTags.PICKAXES, miningLevel).strength(hardness,resistance).sounds(BlockSoundGroup.METAL));
     }
+
     public List<ItemStack> getDroppedStacks(BlockState state, LootContext.Builder builder) {
         Identifier identifier = this.getLootTableId();
         if (identifier == LootTables.EMPTY) {

@@ -1,6 +1,8 @@
 {
-  "block.dwarf.radiusk": "Радиуск",
-  "itemGroup.dwarf.blocks": "Радиуск",
+  "itemGroup.dwarf.blocks": "Блоки",
+  "itemGroup.dwarf.items": "Предметы",
+
   "item.dwarf.radiy": "Радий",
-  "itemGroup.dwarf.items": "Радий"
+
+  "block.dwarf.radiusk": "Радиуск"
 }

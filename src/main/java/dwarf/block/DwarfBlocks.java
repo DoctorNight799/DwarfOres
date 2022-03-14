@@ -11,6 +11,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class DwarfBlocks {
+
     public static final Map<Identifier, BlockItem> ITEMS = new LinkedHashMap<>();
     public static final Map<Identifier, Block> BLOCKS = new LinkedHashMap<>();
 

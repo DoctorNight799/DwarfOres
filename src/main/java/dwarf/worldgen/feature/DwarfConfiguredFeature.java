@@ -21,6 +21,7 @@ public class DwarfConfiguredFeature {
 
     private static final PlacedFeature RADIUSK_OVERWORLD_PLACED_FEATURE = RADIUSK_OVERWORLD.withPlacement(CountPlacementModifier.of(15), //number of veins per chunk
             SquarePlacementModifier.of(), HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(20)));
+
     static public void register(){
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(MODID, "radiusk_overworld"), RADIUSK_OVERWORLD);
         Registry.register(BuiltinRegistries.PLACED_FEATURE, new Identifier(MODID, "radiusk_overworld"), RADIUSK_OVERWORLD_PLACED_FEATURE);

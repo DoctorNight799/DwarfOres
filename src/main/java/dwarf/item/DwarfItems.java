@@ -23,6 +23,7 @@ public class DwarfItems {
     private static FabricItemSettings settings(){
         return new FabricItemSettings().group(DwarfMain.ITEM_GROUP_ITEMS);
     }
+
     public static void register() {
         ITEMS.forEach((id, item) -> Registry.register(Registry.ITEM, id, ITEMS.get(id)));
     }
