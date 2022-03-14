@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "dwarf",
+  "version": "${version}",
+
+  "name": "Dwarf Ores",
+  "description": "",
+  "authors": [
+    "Librarian Night",
+    "COBASilver"
+  ],
+  "contact": {
+    "sources": "https://github.com/DoctorNight799/DwarfOres"
+  },
+
+  "license": "MIT",
+  "icon": "assets/dwarf/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dwarf.DwarfMain"
+    ]
+  },
+  "mixins": [
+    "dwarf.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "bclib": ">=1.0.0",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
