@@ -1,9 +1,12 @@
 {
   "itemGroup.dwarf.blocks": "Blocks",
   "itemGroup.dwarf.items": "Items",
+  "itemGroup.dwarf.tools": "Tools",
 
   "item.dwarf.radiy": "Radiy",
+
   "item.dwarf.radiy_sword": "Radiy sword",
+  "item.dwarf.radiy_pickaxe": "Radiy pickaxe",
 
   "block.dwarf.radiusk": "Radiusk"
 }

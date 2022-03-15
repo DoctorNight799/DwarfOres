@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RRR",
+    " S ",
+    " S "
+  ],
+  "key":{
+    "R": {
+      "item": "dwarf:radiy"
+    },
+    "S":{
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "dwarf:radiy_pickaxe"
+  }
+}

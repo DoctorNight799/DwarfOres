@@ -1,9 +1,12 @@
 {
   "itemGroup.dwarf.blocks": "Блоки",
   "itemGroup.dwarf.items": "Предметы",
+  "itemGroup.dwarf.tools": "Инструменты",
 
   "item.dwarf.radiy": "Радий",
+
   "item.dwarf.radiy_sword": "Меч из радия",
+  "item.dwarf.radiy_pickaxe": "Кирка из радия",
 
   "block.dwarf.radiusk": "Радиуск"
 }

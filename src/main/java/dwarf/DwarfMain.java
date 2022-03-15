@@ -2,6 +2,7 @@ package dwarf;
 
 import dwarf.block.DwarfBlocks;
 import dwarf.item.DwarfItems;
+import dwarf.item.tool.DwarfTools;
 import dwarf.worldgen.feature.DwarfConfiguredFeature;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
@@ -21,11 +22,16 @@ public class DwarfMain implements ModInitializer {
             new Identifier(MODID, "items"),
             () -> new ItemStack(DwarfItems.RADIY));
 
+    public static final ItemGroup ITEM_GROUP_TOOLS = FabricItemGroupBuilder.build(
+            new Identifier(MODID, "tools"),
+            () -> new ItemStack(DwarfTools.RADIY_SWORD));
+
     @Override
     public void onInitialize() {
         DwarfBlocks.register();
         DwarfItems.register();
         DwarfConfiguredFeature.register();
+        DwarfTools.register();
     }
 
     public static Identifier newId(String path){
