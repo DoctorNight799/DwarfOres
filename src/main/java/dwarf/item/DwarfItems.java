@@ -14,6 +14,7 @@ public class DwarfItems {
     private static final Map<Identifier, Item> ITEMS = new LinkedHashMap<>();
 
     public static final Item RADIY = add("radiy", new BasedItem(settings()));
+    public static final Item RADIUSK_SWORD = add("radiy_sword", new BasedItem(settings()));
 
     private static <I extends Item> I add(String name, I item) {
         ITEMS.put(new Identifier(DwarfMain.MODID, name), item);

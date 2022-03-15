@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " R ",
+    " R ",
+    " L "
+  ],
+  "key":{
+    "R": {
+      "item": "dwarf.radiy"
+    },
+    "L":{
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "dwarf.radiy_sword"
+  }
+}
