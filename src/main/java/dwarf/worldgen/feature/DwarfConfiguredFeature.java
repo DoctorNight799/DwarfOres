@@ -22,9 +22,20 @@ public class DwarfConfiguredFeature {
     private static final PlacedFeature RADIUSK_OVERWORLD_PLACED_FEATURE = RADIUSK_OVERWORLD.withPlacement(CountPlacementModifier.of(30), //number of veins per chunk
             SquarePlacementModifier.of(), HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(30)));
 
-    static public void register(){
+    private static final ConfiguredFeature<?, ?> LIMURIUN_OVERWORLD = Feature.ORE.configure(new OreFeatureConfig
+            (OreConfiguredFeatures.STONE_ORE_REPLACEABLES, DwarfBlocks.LIMURIUN.getDefaultState(), 1));
+
+    private static final PlacedFeature LIMURIUN_OVERWORLD_PLACED_FEATURE = LIMURIUN_OVERWORLD.withPlacement(CountPlacementModifier.of(1), //number of veins per chunk
+            SquarePlacementModifier.of(), HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(10)));
+
+    static public void register() {
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(MODID, "radiusk_overworld"), RADIUSK_OVERWORLD);
         Registry.register(BuiltinRegistries.PLACED_FEATURE, new Identifier(MODID, "radiusk_overworld"), RADIUSK_OVERWORLD_PLACED_FEATURE);
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, RegistryKey.of(Registry.PLACED_FEATURE_KEY, new Identifier(MODID, "radiusk_overworld")));
+
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(MODID, "limuriun_overworld"), LIMURIUN_OVERWORLD);
+        Registry.register(BuiltinRegistries.PLACED_FEATURE, new Identifier(MODID, "limuriun_overworld"), LIMURIUN_OVERWORLD_PLACED_FEATURE);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, RegistryKey.of(Registry.PLACED_FEATURE_KEY, new Identifier(MODID, "limuriun_overworld")));
     }
 }
+
