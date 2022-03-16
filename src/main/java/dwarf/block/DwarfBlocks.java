@@ -16,6 +16,7 @@ public class DwarfBlocks {
     public static final Map<Identifier, Block> BLOCKS = new LinkedHashMap<>();
 
     public static final Block RADIUSK =add("radiusk",new BasedBlock(3.0f,3.0f,2));
+    public static final Block LIMURIUN = add("limuriun", new BasedBlock(10.0f,10.0f,5));
 
     private static <B extends Block> B add(String name, B block) {
         Item.Settings settings = new Item.Settings();

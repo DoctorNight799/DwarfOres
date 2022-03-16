@@ -7,6 +7,8 @@
 
   "item.dwarf.radiy_sword": "Меч из радия",
   "item.dwarf.radiy_pickaxe": "Кирка из радия",
+  "item.dwarf.radiy_shovel": "Лопата из радия",
 
-  "block.dwarf.radiusk": "Радиуск"
+  "block.dwarf.radiusk": "Радиуск",
+  "block.dwarf.limuriun": "Лимуриун"
 }

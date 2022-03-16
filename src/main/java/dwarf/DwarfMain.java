@@ -24,7 +24,7 @@ public class DwarfMain implements ModInitializer {
 
     public static final ItemGroup ITEM_GROUP_TOOLS = FabricItemGroupBuilder.build(
             new Identifier(MODID, "tools"),
-            () -> new ItemStack(DwarfTools.RADIY_SWORD));
+            () -> new ItemStack(DwarfTools.RADIY_PICKAXE));
 
     @Override
     public void onInitialize() {
