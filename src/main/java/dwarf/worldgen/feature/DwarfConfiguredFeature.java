@@ -19,8 +19,8 @@ public class DwarfConfiguredFeature {
     private static final ConfiguredFeature<?, ?> RADIUSK_OVERWORLD = Feature.ORE.configure(new OreFeatureConfig
             (OreConfiguredFeatures.STONE_ORE_REPLACEABLES, DwarfBlocks.RADIUSK.getDefaultState(), 4));
 
-    private static final PlacedFeature RADIUSK_OVERWORLD_PLACED_FEATURE = RADIUSK_OVERWORLD.withPlacement(CountPlacementModifier.of(15), //number of veins per chunk
-            SquarePlacementModifier.of(), HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(20)));
+    private static final PlacedFeature RADIUSK_OVERWORLD_PLACED_FEATURE = RADIUSK_OVERWORLD.withPlacement(CountPlacementModifier.of(30), //number of veins per chunk
+            SquarePlacementModifier.of(), HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(30)));
 
     static public void register(){
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(MODID, "radiusk_overworld"), RADIUSK_OVERWORLD);
