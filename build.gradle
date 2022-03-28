@@ -16,6 +16,7 @@ repositories {
 	maven { url "https://maven.gegy.dev" } //databreaker
 	maven { url "https://ladysnake.jfrog.io/artifactory/mods" } //CCA
 	maven { url "https://maven.terraformersmc.com" } //modmenu, trinkets
+	maven { url "https://server.bbkr.space/artifactory/libs-release"}
 }
 
 dependencies {
@@ -27,6 +28,7 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 	modImplementation "com.github.paulevsGitch:BCLib:${project.bclib_version}"
+	modImplementation include ("io.github.cottonmc:LibGui:5.3.1+1.18")
 
 	modLocalRuntime "me.shedaniel:RoughlyEnoughItems-fabric:7.3.432"
 	modLocalRuntime "com.terraformersmc:modmenu:3.0.1"

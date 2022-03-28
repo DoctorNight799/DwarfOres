@@ -17,6 +17,7 @@ public class DwarfBlocks {
 
     public static final Block RADIUSK =add("radiusk",new BasedBlock(3.0f,3.0f,2));
     public static final Block LIMURIUN = add("limuriun", new BasedBlock(10.0f,10.0f,5));
+    public static final Block SEPARATOR = add("separator", new BasedBlock(1.0f,1.0f,0));
 
     private static <B extends Block> B add(String name, B block) {
         Item.Settings settings = new Item.Settings();

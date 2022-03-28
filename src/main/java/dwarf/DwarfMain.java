@@ -26,6 +26,7 @@ public class DwarfMain implements ModInitializer {
             new Identifier(MODID, "tools"),
             () -> new ItemStack(DwarfTools.RADIY_PICKAXE));
 
+
     @Override
     public void onInitialize() {
         DwarfBlocks.register();
